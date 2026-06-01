@@ -1,6 +1,6 @@
 # Docker container for MS Teams running on Edge
 This container allows you to set up and run MS Teams in the Edge browser as a PWA App.
-The purpose of this exercise is to allow Teams to stay logged in for more than 24 hours, a feat apparently impossible to achieve with teams4linux in our lab.
+The purpose of this exercise is to allow Teams to stay logged in for more than 24 hours, a feat apparently impossible to achieve with teams4linux in our lab, without outright poluting your system with MS Edge installation..
 
 ## Setup
 First, build the image using `./build.sh`
