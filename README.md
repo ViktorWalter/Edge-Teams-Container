@@ -33,3 +33,5 @@ The persistency of the login is done via mounting a config directory `profile` g
   - Solution: create a file named `.pwa-setup-done` in the `profile` directory.
 - Fonts in Teams are ugly
   - Likely caused by the container having access only to the most basic fonts installed in Ubuntu.
+- The App only runs as an active window, rather than hiding into a tray icon.
+  - Likely an artifact of the fact that the tray service on the host is not accessible to the container. I didn't verify wheter this is also the case with "native" installation of Edge.
