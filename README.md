@@ -26,3 +26,8 @@ Running `install.sh` will create and install a `.desktop` launcher file into you
 
 ## Migration
 The persistency of the login is done via mounting a config directory `profile` generated on the host when you run the `run.sh` . Transferring your profile to another computer should therefore be as easy as copying over (or replacing it if you already ran `run.sh` on the new installation) the `profile` directory.
+
+## Known issues
+- After setting up the PWA, subsequent runs of `run.sh` don't open the PWA, but rather a normal browser window.
+  - Exitting the Edge window did not lead to the `docker exec` command cleanly returning, thus preventing the creation of the "first run" flag file.
+  - Solution: create a file named `.pwa-setup-done` in the `profile` directory.
