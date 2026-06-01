@@ -25,7 +25,7 @@ This will expose the home directory as a `host_home` directory in the container 
 Running `install.sh` will create and install a `.desktop` launcher file into your host system - for quick access.
 
 ## Migration
-The persistency of the login is done via mounting a config directory `profile` generated on the host when you run the `run.sh` . Transferring your profile to another computer should therefore be as easy as copying over (or replacing it if you already ran `run.sh` on the new installation) the `profile` directory.
+The persistence of the login is done via mounting a config directory `profile` generated on the host when you run the `run.sh` . Transferring your profile to another computer should therefore be as easy as copying over (or replacing it if you already ran `run.sh` on the new installation) the `profile` directory.
 
 ## Known issues
 - After setting up the PWA, subsequent runs of `run.sh` don't open the PWA, but rather a normal browser window with URL field and other decorations.
