@@ -37,3 +37,4 @@ The persistence of the login is done via mounting a config directory `profile` g
   - Likely an artifact of the fact that the tray service on the host is not accessible to the container. I didn't verify wheter this is also the case with "native" installation of Edge.
 - Links are opened in the containerized Edge, rather than in the host default browser
 - Notification pop-ups don't conform to the host system theme
+- Edge complains about the `--no-sandbox` flag
