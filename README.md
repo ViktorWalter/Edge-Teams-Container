@@ -4,10 +4,14 @@ The purpose of this exercise is to allow Teams to stay logged in for more than 2
 
 ## Setup
 First, build the image using `./build.sh`
+
 Then, run it using `./run.sh`.
+
 The first run just opens MS Edge window - tell them to fuck off with telemetry, optionally install whatever browser plugins you want and navigate to ` 
 https://teams.microsoft.com`.
+
 Log in to teams, configure it as you wish and then select `... > More Tools > Apps > Install Microsoft Teams (PWA)` to add it as an "App".
+
 Upon subsequent runs of `run.sh` you should be sent directly to the App.
 
 If you want to have access to the host filesystem, you may add something like
