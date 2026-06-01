@@ -31,3 +31,5 @@ The persistency of the login is done via mounting a config directory `profile` g
 - After setting up the PWA, subsequent runs of `run.sh` don't open the PWA, but rather a normal browser window.
   - Exitting the Edge window did not lead to the `docker exec` command cleanly returning, thus preventing the creation of the "first run" flag file.
   - Solution: create a file named `.pwa-setup-done` in the `profile` directory.
+- Fonts in Teams are ugly
+  - Likely caused by the container having access only to the most basic fonts installed in Ubuntu.
